@@ -8,9 +8,35 @@ public class GameManager : MonoBehaviour {
     public GameObject cardObj;
     public GameObject cardOutDest;
 
+
+
     public List<GameObject> cards = new List<GameObject>();
 
     public int cardCount = 0;
+
+
+
+    public ParticleSystem expParticle;
+
+    private void Awake()
+    {
+        //expParticle.gameObject.SetActive(false);
+
+        var emission = expParticle.emission;
+        emission.enabled = false;
+
+        expParticle.Stop();
+    }
+
+    public void OnClickExpStart()
+    {
+        //expParticle.gameObject.SetActive(true);
+        
+        expParticle.Play();
+
+        var emission = expParticle.emission;
+        emission.enabled = true;
+    }
 
     public void OnClickMoveStart()
     {
@@ -45,7 +71,6 @@ public class GameManager : MonoBehaviour {
 
         if (cardCount == 3)
         {
-            Debug.Log("모두도착");
             StartCoroutine(Proc_CardMoveToIn());
         }
     }

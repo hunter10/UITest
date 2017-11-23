@@ -80,8 +80,10 @@
     <Compile Include="Assets\ProgressBar\Script\ProgressBarBehaviour.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressRadialBehaviour.cs" />
     <Compile Include="Assets\ProgressBar\Script\Utils.cs" />
+    <Compile Include="Assets\Scenes\CardMoveDeckToUser\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scenes\CardMoveTest\Scripts\Card.cs" />
     <Compile Include="Assets\Scenes\CardMoveTest\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scenes\GraphAutoScale\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ProgressBarGameManager.cs" />
     <Compile Include="Assets\Scripts\ShopItemTableViewCell.cs" />
     <Compile Include="Assets\Scripts\ShopItemTableViewController.cs" />
