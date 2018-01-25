@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/GraphAutoScale/GraphAutoScale.unity
+- path: Assets/Scenes/ReuseScrollView/ReuseScrollView.unity
   isLoaded: 1
   isActive: 1
